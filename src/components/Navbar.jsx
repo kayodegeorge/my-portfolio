@@ -21,11 +21,11 @@ function Navbar() {
         {/* menu */}
         
             <ul className=' mx-20  hidden md:flex'>
-                <li className=' hover:text-[#8BDB81] p-5'>
+                <li className=' hover:text-[#8BDB81] p-5 cursor-pointer'>
                     <Link to='projects' smooth={true} duration={500}>
                     Projects
                     </Link></li>
-                <li className='p-5 hover:text-[#8BDB81]'><Link to='contact' smooth={true} duration={500}>
+                <li className='p-5 hover:text-[#8BDB81] cursor-pointer'><Link to='contact' smooth={true} duration={500}>
                     Contact
                     </Link></li>
             </ul> 

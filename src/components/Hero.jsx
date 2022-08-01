@@ -22,7 +22,7 @@ function Hero() {
           />
           {/* <p className='text-3xl sm:text-5xl font-bold ' style={{color:"#F7F7F7"}}>Building Beautiful Web Experiences</p> */}
           <div className="">
-            <button className='text-white group border-2 px-6 py-3 my-2 flex items-center hover:bg-[#8BDB81] hover:border-bg-[#8BDB81]'><Link to='projects' smooth={true} duration={500}>
+            <button className='text-white group border-2 px-6 py-3 my-2 flex items-center hover:bg-[#8BDB81] hover:border-[#8BDB81]'><Link to='projects' smooth={true} duration={500}>
                    View Projects
                     </Link>
             <span className='group-hover:rotate-90 duration-300 '>
