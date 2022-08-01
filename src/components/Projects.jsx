@@ -38,7 +38,7 @@ function Projects() {
                
                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-6">
                    
-                   <AnimationOnScroll initiallyVisible={true} animateIn="animate__bounceInRight">
+                   <AnimationOnScroll initiallyVisible={true} animateIn="animate__fadeInRight">
                    <div className="">
                               
                               <div class="max-w-sm bg-[#121212] rounded-lg border border-gray-300 shadow-md dark:bg-gray-800 dark:border-gray-700">
@@ -49,7 +49,8 @@ function Projects() {
                                    <a href="#">
                                        <h5 class="mb-2 text-2xl tracking-tight text-gray-100 dark:text-white">The Power-room</h5>
                                    </a>
-                                   <p class="mb-3 font-normal text-gray-100 dark:text-gray-400">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                   <p class="mb-3 font-normal text-gray-100 dark:text-gray-400">A fitness and training center platform</p>
+                                   <p className='mb-3 font-normal text-gray-100 dark:text-gray-400'>HTML, CSS, Tailwind,  Javascript</p>
                                    <a href="#" class="inline-flex items-center py-2 px-3 text-sm font-medium text-center text-gray-100 rounded-lg border-gray-300 border hover:bg-[#371B58]">
                                        Code
                                        <AiOutlineArrowRight/>
@@ -60,7 +61,7 @@ function Projects() {
 </AnimationOnScroll>
 
                    
-                   <AnimationOnScroll initiallyVisible={true} animateIn="animate__tada">
+                   <AnimationOnScroll initiallyVisible={true} animateIn="animate__fadeInLeft">
                    <div className="">
                               
                               <div class="max-w-sm bg-[#121212] rounded-lg border border-gray-300 shadow-md dark:bg-gray-800 dark:border-gray-700">
@@ -69,9 +70,10 @@ function Projects() {
                                </a>
                                <div class="p-5">
                                    <a href="#">
-                                       <h5 class="mb-2 text-2xl tracking-tight text-gray-100 dark:text-white">Astrapay</h5>
+                                       <h5 class="mb-2 text-2xl tracking-tight text-gray-100 dark:text-white">AstrapayNG Landing</h5>
                                    </a>
-                                   <p class="mb-3 font-normal text-gray-100 dark:text-gray-400">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                   <p class="mb-3 font-normal text-gray-100 dark:text-gray-400">Banking App platform</p>
+                                   <p className=''>HTML, CSS, MaterializeCSS, Javascript</p>
                                    <a href="#" class="inline-flex items-center py-2 px-3 text-sm font-medium text-center text-gray-100 rounded-lg border-gray-300 border hover:bg-[#371B58]">
                                        Code
                                        <AiOutlineArrowRight/>
@@ -82,43 +84,49 @@ function Projects() {
                                               </div>
 </AnimationOnScroll>
 
-                   <div className="">
+             <AnimationOnScroll initiallyVisible={true} animateIn="animate__fadeInRight">
+             <div className="">
                               
-   <div class="max-w-sm bg-[#121212] rounded-lg border border-gray-300 shadow-md dark:bg-gray-800 dark:border-gray-700">
-    <a href="#">
-        <img class="rounded-t-lg" src={MealRecImg} alt=""/>
-    </a>
-    <div class="p-5">
-        <a href="#">
-            <h5 class="mb-2 text-2xl tracking-tight text-gray-100 dark:text-white">Meal Delivery</h5>
-        </a>
-        <p class="mb-3 font-normal text-gray-100 dark:text-gray-400">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-        <a href="#" class="inline-flex items-center py-2 px-3 text-sm font-medium text-center text-gray-100 rounded-lg border-gray-300 border hover:bg-[#371B58] focus:outline-none ">
-            Code
-            <AiOutlineArrowRight/>
-        </a>
-    </div>
-</div>
-                   </div>
-                   <div className="">
-                              
-   <div class="max-w-sm bg-[#121212] rounded-lg border border-gray-300 shadow-md dark:bg-gray-800 dark:border-gray-700">
-    <a href="#">
-        <img class="rounded-t-lg" src={AstraPayImg} alt=""/>
-    </a>
-    <div class="p-5">
-        <a href="#">
-            <h5 class="mb-2 text-2xl tracking-tight text-gray-100 dark:text-white">Marvel Search Engine</h5>
-        </a>
-        <p class="mb-3 font-normal text-gray-100 dark:text-gray-400">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-        <a href="#" class="inline-flex items-center py-2 px-3 text-sm font-medium text-center text-gray-100 rounded-lg border-gray-300 border hover:bg-[#371B58]  ">
-            Code
-            <AiOutlineArrowRight/>
-        </a>
-    </div>
-</div>     
-                   </div>
+                              <div class="max-w-sm bg-[#121212] rounded-lg border border-gray-300 shadow-md dark:bg-gray-800 dark:border-gray-700">
+                               <a href="#">
+                                   <img class="rounded-t-lg" src={MealRecImg} alt=""/>
+                               </a>
+                               <div class="p-5">
+                                   <a href="#">
+                                       <h5 class="mb-2 text-2xl tracking-tight text-gray-100 dark:text-white">Meal Delivery</h5>
+                                   </a>
+                                   <p class="mb-3 font-normal text-gray-100 dark:text-gray-400">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                   <a href="#" class="inline-flex items-center py-2 px-3 text-sm font-medium text-center text-gray-100 rounded-lg border-gray-300 border hover:bg-[#371B58] focus:outline-none ">
+                                       Code
+                                       <AiOutlineArrowRight/>
+                                   </a>
+                               </div>
+                           </div>
+                                              </div>
+             </AnimationOnScroll >
 
+              <AnimationOnScroll initiallyVisible={true} animateIn="animate__fadeInLeft">
+              <div className="">
+                              
+                              <div class="max-w-sm bg-[#121212] rounded-lg border border-gray-300 shadow-md dark:bg-gray-800 dark:border-gray-700">
+                               <a href="#">
+                                   <img class="rounded-t-lg" src={AstraPayImg} alt=""/>
+                               </a>
+                               <div class="p-5">
+                                   <a href="#">
+                                       <h5 class="mb-2 text-2xl tracking-tight text-gray-100 dark:text-white">Marvel Search Engine</h5>
+                                   </a>
+                                   <p class="mb-3 font-normal text-gray-100 dark:text-gray-400">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                   <a href="#" class="inline-flex items-center py-2 px-3 text-sm font-medium text-center text-gray-100 rounded-lg border-gray-300 border hover:bg-[#371B58]  ">
+                                       Code
+                                       <AiOutlineArrowRight/>
+                                   </a>
+                               </div>
+                           </div>     
+                                              </div>
+                           
+              </AnimationOnScroll>
+                   <AnimationOnScroll initiallyVisible={true} animateIn="animate__fadeInRight">
                    <div className="">
                               
                               <div class="max-w-sm bg-[#121212] rounded-lg border border-gray-300 shadow-md dark:bg-gray-800 dark:border-gray-700">
@@ -136,8 +144,11 @@ function Projects() {
                                    </a>
                                </div>
                            </div>        
-                                              </div>  
-                                              <div className="">
+                                              </div> 
+                   </AnimationOnScroll>
+                    
+                    <AnimationOnScroll initiallyVisible={true} animateIn="animate__fadeInRight">
+                    <div className="">
                               
                               <div class="max-w-sm bg-[#121212] rounded-lg border border-gray-300 shadow-md dark:bg-gray-800 dark:border-gray-700">
                                <a href="#">
@@ -158,6 +169,8 @@ function Projects() {
                            
                                              
                                               </div>
+                    </AnimationOnScroll>
+                           
                 
                </div>
            </div>

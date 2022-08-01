@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-scroll'
 import {HiArrowNarrowRight} from 'react-icons/hi'
+import { FaGithub, FaLinkedinIn, FaTwitter } from 'react-icons/fa'
 import Typed from 'react-typed'
 import { AnimationOnScroll } from 'react-animation-on-scroll'
 function Hero() {
@@ -28,6 +29,21 @@ function Hero() {
             <HiArrowNarrowRight className='ml-3'/>
             </span>
              </button>
+          </div>
+          {/* social icons */}
+          <div className="flex items-center p-8 lg:hidden text-white" id='socials'>
+            <div className="p-5">
+              <a href="https://github.com/kayodegeorge"><FaGithub size={25}/></a>
+            
+            </div>
+            <div className="p-5">
+              <a href="https://www.linkedin.com/in/kayode-george-43a7a519a/"><FaLinkedinIn size={25}/></a>
+            
+            </div>
+            <div className="p-5">
+              <a href="https://twitter.com/thekayodeg"><FaTwitter size={25}/></a>
+            
+            </div>
           </div>
         </div>
     </div>

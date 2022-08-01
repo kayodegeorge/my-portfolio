@@ -24,8 +24,7 @@ function About() {
             </AnimationOnScroll>
             <AnimationOnScroll animateIn="animate__fadeInRight">
             <div className="">
-                <p>Focused on building software products with great user experience building interfaces that are thoughful, intuitive and generally accessible.
- . I have with experience in working with both front-end and back-end JavaScript frameworks and libraries for personal projects, client-facing products, and teams with fast development cycles.</p>
+                <p>Focused on building software products with great user experience; building interfaces that are thoughful, intuitive and generally accessible. I have with experience in working with both front-end and back-end JavaScript frameworks and libraries for personal projects, client-facing products, and teams with fast development cycles.</p>
             </div>
             </AnimationOnScroll>
             

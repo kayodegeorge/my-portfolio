@@ -7,19 +7,23 @@ import Navbar from "./components/Navbar";
 // import Skills from "./components/Skills";
 import Projects from "./components/Projects";
 import Contact from './components/Contact'
-import Footer  from './components/Footer';
+
 import { ThemeContext } from "./Theme";
 
 function App() {
-  const { theme } = useContext(ThemeContext);
+  
+  const { theme, toggleTheme} = useContext(ThemeContext);
   return (
     <div className={`App ${theme}`}>
        <Navbar/>
+       {/* <div>
+       <button onClick={() => toggleTheme()}>{theme}</button>
+       </div> */}
        <Hero/>
        <About/> 
        <Projects/>
        <Contact/>
-       <Footer/>
+       
     </div>
   ); 
 }

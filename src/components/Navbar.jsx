@@ -2,7 +2,6 @@ import React, {useState, useContext} from 'react'
 import {Link} from 'react-scroll'
 import {FaBars, FaTimes, FaGithub, FaLinkedinIn, FaTwitter} from 'react-icons/fa' 
 import { HiOutlineMail } from 'react-icons/hi'
-import {BsFillPersonLinesFill, BsTwitter} from 'react-icons/bs'
 import Logo from '../assets/logo.jpeg'
 import { ThemeContext } from "../Theme";
 function Navbar() {
@@ -30,27 +29,46 @@ function Navbar() {
                     Contact
                     </Link></li>
             </ul> 
-            {/* <button onClick={() => toggleTheme()}>{theme}</button> */}
+            
             
 
 
         {/* hamburger */}
         <div onClick={handleClick} className="md:hidden z-10">
-            {!nav ? <FaBars className='ease-in-out duration-200' size={35}/>:<FaTimes size={35}/>}
+            {!nav ? <FaBars className='rotate- translate-y-3 opacity-50 group-hover:opacity-100 cursor-pointer' size={35}/>:<FaTimes className='opacity-50 group-hover:opacity-100 cursor-pointer' size={35}/>}
         </div>
         {/* mobile menu */}
         <ul className={!nav ? 'hidden' : 'absolute top-0 left-0 w-full h-screen bg-[#121212] flex flex-col justify-center items-center'}> 
-                <li  className='py-6 text-4xl'>
+                <li  className='py-6 text-4xl cursor-pointer'>
                     <Link onClick={handleClick} to='hero' smooth={true} duration={500}>Home</Link>
                      </li>
-                <li className='py-6 text-4xl'><Link  onClick={handleClick} to='about' smooth={true} duration={500}>About</Link></li>
+                <li className='py-6 text-4xl cursor-pointer'><Link  onClick={handleClick} to='about' smooth={true} duration={500}>About</Link></li>
                 
-                <li className='py-6 text-4xl'><Link onClick={handleClick} to='projects' smooth={true} duration={500}>
+                <li className='py-6 text-4xl cursor-pointer'><Link onClick={handleClick} to='projects' smooth={true} duration={500}>
                     Projects
                     </Link></li>
-                <li className='py-6 text-4xl'><Link onClick={handleClick} to='contact' smooth={true} duration={500}>
+                <li className='py-6 text-4xl cursor-pointer'><Link onClick={handleClick} to='contact' smooth={true} duration={500}>
                     Contact
-                    </Link></li>
+                    </Link>
+                    </li>
+                    <div className="text-white text-2xl p-6">
+                        <p>gkayode75@gmail.com</p>
+                    </div>
+                    {/* social icons */}
+          <div className="flex items-center p-6 lg:hidden text-white" id='socials'>
+            <div className="p-5">
+              <a href="https://github.com/kayodegeorge"><FaGithub size={25}/></a>
+            
+            </div>
+            <div className="p-5">
+              <a href="https://www.linkedin.com/in/kayode-george-43a7a519a/"><FaLinkedinIn size={25}/></a>
+            
+            </div>
+            <div className="p-5">
+              <a href="https://twitter.com/thekayodeg"><FaTwitter size={25}/></a>
+            
+            </div>
+          </div>
         </ul>
         {/* social media icons */}
         <div className="hidden lg:flex fixed flex-col top-[35%] left-0">
